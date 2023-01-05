@@ -1,1 +1,1 @@
-0x00. Python - Hello, World
+Python programming task written in python3 environment and executed in a linux shell
