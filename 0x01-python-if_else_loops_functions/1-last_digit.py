@@ -2,7 +2,11 @@
 import random
 number = random.randint(-10000, 10000)
 n = number
-ld = abs(n) % 10
+if n < 0:
+    ld = (abs(n) % 10)
+else:
+    ld = n % 10
+
 if ld == 0:
     print('Last digit of {} is {} and is {}'.format(n, ld, 0))
 elif ld > 0 and ld <= 5:
