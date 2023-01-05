@@ -7,6 +7,5 @@ def print_last_digit(n):
         ld = n % 10
 
         print(ld, end="")
-    
-    return ld
 
+    return ld
