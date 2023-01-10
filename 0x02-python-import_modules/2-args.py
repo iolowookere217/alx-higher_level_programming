@@ -8,8 +8,6 @@ if __name__ == '__main__':
 
     argvlength = len(sys.argv)
 
-
-
     if (argvlength == 0):
 
         print("{:d} arguments.".format(argvlength))
