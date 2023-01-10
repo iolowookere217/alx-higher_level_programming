@@ -4,11 +4,11 @@ def print_matrix_integer(matrix=[[]]):
 
     for i in matrix:
 
-        l = 1
+        idx = 1
 
         for j in i:
 
-            if l == len(i):
+            if idx == len(i):
 
                 print("{:d}".format(j), end="")
 
@@ -16,6 +16,6 @@ def print_matrix_integer(matrix=[[]]):
 
                 print("{:d}".format(j), end=" ")
 
-                l = l + 1
+                idx = idx + 1
 
         print()
