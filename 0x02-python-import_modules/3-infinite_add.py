@@ -10,6 +10,6 @@ if __name__ == '__main__':
 
     for number in sys.argv:
 
-        total += int(number)
+        sum_total += int(number)
 
     print("{}".format(sum_total))
