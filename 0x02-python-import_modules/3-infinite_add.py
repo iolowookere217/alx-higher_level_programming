@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
-if __name__ == "__main__":
+if __name__ == '__main__':
 
     import sys
 
-    sum = int(0)
+    sum = 0
 
-    for i in sys.argv:
+    for number in sys.argv:
 
-        sum += int(sys.argv[i])
+        sum += int(number)
 
         print("{}".format(sum))
