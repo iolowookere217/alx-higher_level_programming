@@ -12,4 +12,4 @@ if __name__ == '__main__':
 
         total += int(number)
 
-        print("{}".format(sum_total))
+    print("{}".format(sum_total))
