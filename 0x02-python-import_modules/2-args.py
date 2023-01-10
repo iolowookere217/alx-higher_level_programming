@@ -3,6 +3,8 @@ if __name__ == "__main__":
 
     import sys
 
+    sys.argv.pop(0)
+
     num = len(sys.argv)
 
     if num == 1:
