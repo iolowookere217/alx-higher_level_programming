@@ -10,4 +10,4 @@ def no_c(my_string):
 
             listofchars.remove(char)
 
-    return(" ".join(listofchars))
+    return("".join(listofchars))
