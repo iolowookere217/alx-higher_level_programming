@@ -6,7 +6,7 @@ if __name__ == "__main__":
 
     sum = int(0)
 
-    for i in range(1, len(sys.argv)):
+    for i in sys.argv:
 
         sum += int(sys.argv[i])
 
