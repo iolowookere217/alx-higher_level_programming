@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
+import sys
+
 if __name__ == '__main__':
 
-    import sys
+    sys.argv.pop(0)
 
     sum = 0
 
