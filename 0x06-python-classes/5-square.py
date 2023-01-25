@@ -1,82 +1,74 @@
 #!/usr/bin/python3
 
-"5-square.py define"
+""" Square module """
 
 
 class Square:
 
-    """class Square
+    """ Declares a square class """
 
-    """
-
-    def __init__(self, size=0):
-
-        """Inizialitation of variables
-
-        Arg self identificador
-
-        size of square
+    def __init__(self, size=0) -> None:
 
         """
+        Intializes the attributes
 
+        Args:
+
+        size: size of square
+
+        """
         self.size = size
 
         @property
         def size(self):
 
-            """Inizialitation of variables
-
-            Arg self identificador
-
-            """
+            """ Gets the attribute to be used in class """
 
             return self.__size
 
         @size.setter
         def size(self, value):
 
-            """Inizialitation of variables
-
-            Arg self identificador
-
-            value of square
-
-            """
-
-            if not isinstance(value, int):
+            if type(value) is not int:
 
                 raise TypeError("size must be an integer")
 
-            if value < 0:
+            elif value < 0:
 
-                raise valueError("size must be >= 0")
+                raise ValueError("size must be >= 0")
 
-            self.__size = value
+            else:
 
-            def area(self):
+                self.__size = value
 
-                """Inizialitation of variables
+                def area(self):
 
-                Arg self identificador
+                    """ Computes area of a square """
 
-                """
+                    return self.__size ** 2
 
-                return self.__size ** 2
+                def my_print(self):
 
-            def my_print(self):
+                    """ Prints in stdout the square with the character # """
 
-                """Inizialitation of variables
+                    if self.__size == 0:
 
-                Arg self identificador
+                        print()
 
-                """
+                    else:
 
-                if self.__size == 0:
+                        integer = 0
 
-                    print()
+                        while integer < self.__size:
 
-                else:
+                            number = 0
 
-                    for i in range(0, self.__size):
+                            while number < self.__size:
 
-                        print("#" * self.__size)
+                                print("{}".format("#"), end='')
+
+                                number += 1
+
+                                print()
+
+                                integer += 1
