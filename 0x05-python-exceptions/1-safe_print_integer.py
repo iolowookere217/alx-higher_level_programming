@@ -9,6 +9,6 @@ def safe_print_integer(value):
 
         return True
 
-    except:
+    except ValueError:
 
         return False
