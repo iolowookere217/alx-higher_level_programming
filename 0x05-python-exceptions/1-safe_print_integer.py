@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-
 def safe_print_integer(value):
 
     try:
@@ -9,6 +8,6 @@ def safe_print_integer(value):
 
         return True
 
-    except (ValueError, TypeError):
+    except (TypeError, ValueError):
 
         return False
