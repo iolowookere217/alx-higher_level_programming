@@ -80,4 +80,4 @@ class Rectangle:
                 res += ('#' * self.__width)
             else:
                 res += (('#' * self.__width) + '\n')
-            return res
+        return res
