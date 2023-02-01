@@ -8,6 +8,8 @@ A rectangle with width and height.
 class Rectangle:
     """
     Rectangle functions and data
+    width (int) = the width of the new rectangle
+    height (int) = the height of the new rectangle
     """
 
     def __init__(self, width=0, height=0):
