@@ -13,4 +13,4 @@ class LockedClass:
             self.__dict__[attribute] = value
         else:
             raise AttributeError("'LockedClass' object has no \
-            attribute '" + attribute + "'")
+attribute '" + attribute + "'")
