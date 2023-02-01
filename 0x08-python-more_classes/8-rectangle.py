@@ -16,9 +16,6 @@ class Rectangle:
     # Public
     number_of_instances = 0
     print_symbol = "#"
-    print_symbol = "&"
-    print_symbol = "C"
-    print_symbol = '["C", "is", "fun!"]'
 
     def __init__(self, width=0, height=0):
 
@@ -76,7 +73,6 @@ class Rectangle:
             return 2 * (self.__height + self.__width)
 
     @staticmethod
-
     def bigger_or_equal(rect_1, rect_2):
 
         """Return the Rectangle with the greater area.
