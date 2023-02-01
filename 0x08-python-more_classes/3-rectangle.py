@@ -67,15 +67,17 @@ class Rectangle:
             return 2 * (self.__height + self.__width)
 
     def __str__(self):
+
         """ print() __str__ method funtion to return rectangle in char '#'
         """
         res = ""
+
+        rect = []
         if self.__width == 0 or self.__height == 0:
             return res
-
         for i in range(self.__height):
             if i == self.__height - 1:
                 res += ('#' * self.__width)
             else:
                 res += (('#' * self.__width) + '\n')
-                return res
+            return res
