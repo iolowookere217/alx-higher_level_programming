@@ -10,12 +10,16 @@ class Rectangle:
     Rectangle functions and data
     width (int) = the width of the new rectangle
     height (int) = the height of the new rectangle
+    number_of_instances (int): The number of Rectangle instances.
     """
+
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
 
         """ Instantiation
         """
+        type(self).number_of_instances += 1
         self.height = height
         self.width = width
 
@@ -96,5 +100,3 @@ class Rectangle:
 
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
-
-
