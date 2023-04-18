@@ -8,5 +8,5 @@ const argument = process.argv;
 if (Number(argument[2])) {
   for (let i = 0; i < argument[2]; i++) { console.log('X'.repeat(argument[2])); }
 } else {
-  console.log('Missing number of occurrences');
+  console.log('Missing size');
 }
