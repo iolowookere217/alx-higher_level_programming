@@ -4,9 +4,9 @@
 // If no argument passed, print 0
 
 const argument = process.argv;
-const length = process.argv.length;
-if (length <= 3) {
+if (process.argv.length <= 3) {
   console.log(0);
 } else {
-  console.log(argument.sort().reverse()[1]);
+  const list = argument.sort();
+  console.log(list.reverse()[1]);
 }
