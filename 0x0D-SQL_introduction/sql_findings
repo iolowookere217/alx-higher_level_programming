@@ -1,0 +1,2 @@
+-- how to import a table into a database 
+mysql -u username -p databasename < path/example.sql
