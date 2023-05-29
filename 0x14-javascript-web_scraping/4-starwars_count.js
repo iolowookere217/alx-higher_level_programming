@@ -10,6 +10,6 @@ request(url, { json: true }, (err, res, body) => {
   } else {
     const films = body.results;
     const match = films.filter((film) => film.characters.includes(actor));
-    console.log(match.length);
+    console.log(`${match.length}`);
   }
 });
