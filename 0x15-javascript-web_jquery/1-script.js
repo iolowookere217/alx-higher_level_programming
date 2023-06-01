@@ -1,3 +1,3 @@
-$(function() {
-  $('header).css('color': "##F0000);
-                });
+$(function () {
+  $('header').css('color', '##F0000');
+});
