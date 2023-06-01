@@ -1,3 +1,4 @@
-$('DIV#add_item').click(function () {
-  $('UL.my_list').append('<li>Item</li>');
+$('DIV#update_header').click(function () {
+    $('header' ).text('New Header!!!');
+  });
 });
