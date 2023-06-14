@@ -6,7 +6,7 @@
 
 import sys
 import urllib.parse as parse
-from urllib import request
+import urllib.request as request
 
 
 if __name__ == '__main__':
@@ -18,6 +18,6 @@ if __name__ == '__main__':
         data = data.encode('ascii')
         req = request.Request(url, data)
 
-        with request.urlopen(url) as response:
+        with request.urlopen(req) as response:
             the_page = response.read()
             print(the_page.decode("utf-8"))
